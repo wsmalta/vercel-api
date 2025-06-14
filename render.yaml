@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: api-stocks
+    env: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: python app.py
+    envVars:
+      - key: GEMINI_API_KEY
+        value: AIzaSyDlLR4Il77l5anRha_dNT3YMYi6PXHv7FU
