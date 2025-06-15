@@ -1,4 +1,6 @@
-from flask import Request, jsonify
-
-def handler(request: Request):
-    return "✅ API Gemini + Yahoo Finance ativa!"
+def handler(request):
+    return {
+        "statusCode": 200,
+        "body": "✅ API Gemini + Yahoo Finance ativa!",
+        "headers": {"Content-Type": "text/plain"}
+    }
