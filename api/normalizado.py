@@ -42,5 +42,8 @@ def handler(request):
     except Exception as e:
         return {
             "statusCode": 500,
-            "body": json.dumps({"
+            "body": json.dumps({"erro": str(e)}),
+            "headers": {"Content-Type": "application/json"}
+        }
+
 
