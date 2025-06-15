@@ -11,7 +11,7 @@ def handler(request):
         }
 
     try:
-        data = json.loads(request.data)
+        data = request.json
     except Exception:
         return {
             "statusCode": 400,
